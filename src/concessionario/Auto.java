@@ -1,3 +1,4 @@
+package concessionario;
 /* Snack 1:
 	Contatore di Auto
 Crea una classe Auto con:
