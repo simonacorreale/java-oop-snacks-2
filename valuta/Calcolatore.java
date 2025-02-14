@@ -11,11 +11,8 @@ public class Calcolatore {
         // messaggio di benvenuto
         System.out.println("Benvenuto nel nostro sistema di valute, inserisci la currency che vuoi cambiare:");
         
-        // Input dell'utente
-        String valuta = scan.nextLine();
-        
-        // visualizza la valuta inserita
-        System.out.println("Hai scelto la valuta: " + valuta);
+        ConvertitoreValute calcolo = new ConvertitoreValute();
+
         
         // chiudi lo scanner dopo l'uso
         scan.close();

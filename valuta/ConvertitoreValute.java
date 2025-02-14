@@ -22,9 +22,20 @@ public class ConvertitoreValute {
 
     private static final double[][] tassiCambio = {
   
-        {1.0, 1.1, 0.85, 134.0},  // Tassi di cambio da EUR a USD, GBP, JPY
-        {0.9, 1.0, 0.78, 122.0},  // Tassi di cambio da GBP a EUR, USD, JPY
-        {1.2, 1.3, 1.0, 157.0},   // Tassi di cambio da JPY a EUR, USD, GBP
+        {1.0, 1.1, 0.85, 134.0},  
+        {0.9, 1.0, 0.78, 122.0}, 
+        {1.2, 1.3, 1.0, 157.0},  
     };
-    
-}
+
+    private static int valutaToIndex(String valuta) {
+        switch (valuta) {
+            case "EUR": return 0;
+            case "USD": return 1;
+            case "GBP": return 2;
+            case "JPY": return 3;
+            default: throw new IllegalArgumentException("Valuta non supportata");
+        }
+    }
+
+    }
+
